@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace Course1
 {
     public class Pear
     {
+        public bool IsFresh { get; set; }
+        public string Color { get; }
+        public KnownColor RgbColor { get; }
 
         /// <summary>
         /// Default Constructor if no argument are given. If no construct is defined, this one is used.
@@ -21,7 +19,7 @@ namespace Course1
         }
 
         /// <summary>
-        /// Custom Constructor that require argument to be given. 
+        /// Custom Constructor that require argument to be given.
         /// </summary>
         /// <param name="isFresh"></param>
         /// <param name="color"></param>
@@ -33,15 +31,9 @@ namespace Course1
             RgbColor = rgbColor;
         }
 
-        public bool IsFresh { get; set; }
-        public string Color { get; }
-        public KnownColor RgbColor { get; }
-
-
         public void Eat()
         {
             IsFresh = false;
         }
-
     }
 }
