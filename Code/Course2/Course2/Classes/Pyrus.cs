@@ -20,7 +20,7 @@ namespace Course2.Classes
 
         public void Harvest()
         {
-            Console.WriteLine("Harvested");
+            Console.WriteLine("Pear tree has been harvested");
         }
 
         public void Harvest(DateTime dateOfHarvest)
@@ -33,6 +33,11 @@ namespace Course2.Classes
             {
                 Console.WriteLine($"Will harvest in {(dateOfHarvest - DateTime.Today).Days}");
             }
+        }
+
+        public string GetLocation()
+        {
+            return "Canada";
         }
     }
 }

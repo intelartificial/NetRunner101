@@ -16,5 +16,10 @@ namespace Course2.Classes
             }
         }
 
+        public override string ToString()
+        {
+            return Origin;
+        }
+
     }
 }
