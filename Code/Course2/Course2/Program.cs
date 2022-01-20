@@ -10,7 +10,7 @@ namespace Course2
         static void Main(string[] args)
         {
             Fruit fruit = new Fruit("Tomato", 10, KnownColor.Red, true);
-            // Uncomment this line and see that C# doesn't allow the default construct has we have definited at least one constructor.
+            // Uncomment this line and see that C# doesn't allow the default construct as we already have definited at least one constructor.
             //fruit = new Fruit();
 
             Pear pear1 = new Pear();
